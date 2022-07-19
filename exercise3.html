@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <table >
+            <th>
+                <tr>
+        <img style="width: 30%;" src="https://i.ytimg.com/vi/fKx4UxgXxZY/maxresdefault.jpg" alt="">
+    </tr>
+    <tr >
+    <h2>Manufacturer: <span id="manufacturer"></span></h2>
+<h2>Make and Mode: <span id="make"></span></h2>
+<h2>Engine: <span id="engine"></span></h2>
+<h2>Body Style: <span id="body"></span></h2>
+</tr>
+</th>
+</table>
+
+
+
+<script>
+const car = {
+    manufacturer: "Toyota",
+    make: "Corolla AE101",
+    engine: "1,3 2E",
+    body: "Sedan"
+};
+
+document.getElementById("manufacturer").innerHTML = car.manufacturer;
+document.getElementById("make").innerHTML = car.make;
+document.getElementById("engine").innerHTML = car.engine;
+document.getElementById("body").innerHTML = car.body;
+
+</script>
+
+    </body>
+    </html>

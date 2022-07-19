@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+table th{
+	border: 3px solid #1a1a1a;
+    height: 150px;
+    width: 180px;
+	vertical-align: middle;
+	border-collapse: collapse;
+    border-radius: 50%;
+    text-align:center;
+    padding: 5px;
+
+}
+
+        </style>
+      </head>
+<body>
+    <p>Today is : <span id='today'></span>. Current time is : <span id='datetoday'></span></p>
+    <table>
+<th>
+    <h1 ><span id='date'></span></h1>
+    <h1 ><span id='time'></span></h1>
+    <h2 ><span id='day'></span></h2>
+</th>
+</table>
+
+
+
+<script>
+var date = new Date();
+var month = date.toLocaleString('default', { month: 'long' });
+var days = date.getDate();
+var day = date.toLocaleString('default', { weekday: 'long' });
+var time = date.toLocaleTimeString();
+
+
+document.getElementById('date').innerHTML =month +' '+ days;
+document.getElementById('time').innerHTML = time;
+document.getElementById('day').innerHTML = day;
+document.getElementById('today').innerHTML = day;
+document.getElementById('datetoday').innerHTML =month +' '+ days+' '+time;
+
+
+</script>
+
+</body>
+</html>
